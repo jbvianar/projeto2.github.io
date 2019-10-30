@@ -1,0 +1,125 @@
+html {
+	height: 100%;
+}
+
+
+h2 {
+	color: red;
+	font-size: 44px;
+}
+
+
+body {
+	font-family: 'Oswald', sans-serif;
+	background: black;
+
+}
+
+a {
+	color: yellow;
+	text-decoration: blink;
+}
+
+a:hover {
+	color: white;
+}
+
+
+.signup {
+	background: rgba(12,62,80,0.7);
+	padding: 40px;
+	height: 500px;
+	margin-left: 180px;
+	margin: 0 auto;
+	margin-top: 90px;
+	width: 250px;
+}
+
+
+form {
+	width: 240px;
+	text-align: center;
+
+}
+
+input {
+	width: 240px;
+	text-align: left;
+	background: transparent;
+	border-right: none;
+	border-left: none;
+	border-top: none;
+	border-bottom: 1px sodid #fff;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 20px;
+	font-weight: 200px;
+	transition: border 0.5s;
+	outline: none;
+	color: white;
+}
+
+input[type=button]{
+	border: none;
+	width: 190px;
+	background: white;
+	color: #000;
+	font-size: 20px;
+	line-height: 25px;
+	padding: 10px 0;
+	border-radius: 15px;
+	cursor: pointer;
+	text-align: center;
+	color: black;
+}
+
+::placeholder {
+  color: rgba(255,255,255);
+  opacity: 0.4; /* Firefox */
+}
+
+input[type=button]:hover {
+	color: #fff;
+	background-color: black;
+}
+
+#msg {
+    visibility: hidden;
+    min-width: 250px;
+    background-color:yellow;
+    color: #000;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    right: 30%;
+    top: 30px;
+    font-size: 17px;
+    margin-right: 30px;
+}
+
+#msg.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {top: 0; opacity: 0;} 
+    to {top: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to {top: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {top: 30px; opacity: 1;} 
+    to {top: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {top: 30px; opacity: 1;}
+    to {top: 0; opacity: 0;}
+}
