@@ -1,0 +1,53 @@
+html, body {
+  
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #EAE3EA;
+  scroll-behavior: smooth;
+
+}
+
+.barra_cima {
+
+    position: fixed;
+    background: blue;
+    height: 70px;
+    width: 100%;
+    top: 0;
+
+}
+
+
+.grid-container {
+
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 9px;
+    margin-top: 22%;
+    width: 100%;
+
+}
+
+.grid-container > div {
+	
+	padding: 50px 0;
+	background: #f4f4f4;
+
+}
+
+.grid-item {
+	text-align: center;
+	box-shadow: 1px 5px 5px #aaaaaa;
+}
+
+
+.grid-item > img {
+	
+	width: 90%;
+	height: 90%;
+	position: inherit;
+	float: inherit;
+	top: -25px;
+}
+
