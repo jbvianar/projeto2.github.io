@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="css/menu.css" rel="stylesheet" type="text/css">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+	<title></title>
+</head>
+<body>
+
+	<input type="checkbox" id="check">
+	<label id="icone" for="check"><img src="img/menu_sand.png" width="50px"></label>
+	<div class="barra" id="barra">
+		<nav>
+		<a href=""><div class="link">Início</div></a>
+		<a href=""><div class="link">Minha Conta</div></a>
+		<a href=""><div class="link">Pedidos Atendidos</div></a>
+		<a href=""><div class="link">Produtos Disponíveis</div></a>
+		<a href=""><div class="link">Lista de Produtos</div></a>
+		<a href=""><div class="link">Cadastro de Novos Produtos</div></a>
+		<a href=""><div class="link">Alteração/Cadastro Produtos</div></a>
+	</nav>
+		</div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+	(window).scroll(function(e){ 
+  var $el = $('.barra'); 
+  var isPositionFixed = ($el.css('position') == 'fixed');
+  if ($(this).scrollTop() > 200 && !isPositionFixed){ 
+    $el.css({'position': 'fixed', 'top': '0px'}); 
+  }
+  if ($(this).scrollTop() < 200 && isPositionFixed){
+    $el.css({'position': 'static', 'top': '0px'}); 
+  } 
+});
+</script>

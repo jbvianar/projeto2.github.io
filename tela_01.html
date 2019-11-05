@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="css/menu_uni.css" rel="stylesheet" type="text/css">
+	<link href="css/tela_01.css" rel="stylesheet" type="text/css">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+	<title></title>
+
+</head>
+
+<body> 
+
+	<div id="barra_cima" class="barra_cima"></div>
+
+	<object class="menu_uni" id="menu_uni" type="text/html" data="menu.html"></object>
+
+	<div class="grid-container">
+		<div class="grid-item"><img src="img/COMBO.png"></div>
+		<div class="grid-item"><img src="img/COMBO.png"></div>
+		<div class="grid-item"><img src="img/COMBO.png"></div>
+		<div class="grid-item"><img src="img/COMBO.png"></div>
+		<div class="grid-item"><img src="img/COMBO.png"></div>
+		<div class="grid-item"><img src="img/COMBO.png"></div>
+	</div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+	(window).scroll(function(e){ 
+  var $el = $('.barra_cima'); 
+  var isPositionFixed = ($el.css('position') == 'fixed');
+  if ($(this).scrollTop() > 200 && !isPositionFixed){ 
+    $el.css({'position': 'fixed', 'top': '0px'}); 
+  }
+  if ($(this).scrollTop() < 200 && isPositionFixed){
+    $el.css({'position': 'static', 'top': '0px'}); 
+  } 
+});
+</script>
