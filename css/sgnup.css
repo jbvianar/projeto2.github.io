@@ -139,8 +139,16 @@ input[type=button]:hover{
 
 
 #top_msg {
-    left: 50%;
+    
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
     position: absolute;
+    width: 90%;
+    z-index: 1;
+    opacity: 0.8;
+    top: 3%;
 }
 
 #msg {
@@ -149,11 +157,9 @@ input[type=button]:hover{
     background-color: yellow;
     color: #000;
     text-align: center;
-    border-radius: 2px;
+    border-radius: 4px;
     padding: 16px;
-    position: relative;
-    left: -50%;
-    font-size: 17px;
+    font-size: 25px;
 }
 
 #msg.show {
